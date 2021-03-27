@@ -4,11 +4,51 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
    <link rel="stylesheet" href="/css/normalize.css">
    <link rel="stylesheet" href="/styles/main.min.css">
    <title>NewProvidence</title>
 </head>
 <body>
+   <header class="header">
+      <div class="conteiner">
+         <div class="header-body">
+            <div class="header-burger burger"><span class="burger__span"></span></div>
+            <div class="header-novigation">
+               <div class="header-left">
+                  <div class="header-left__list">
+                     <li class="header-left__item"><a href="#" class="header-left__link">Tour</a></li>
+                     <li class="header-left__item"><a href="#" class="header-left__link">Features</a></li>
+                     <li class="header-left__item"><a href="#" class="header-left__link">Pricing</a></li>
+                  </div>
+               </div>
+               <div class="header-right">
+                  <ul class="header-right__list">
+                     <li class="header-right__item"><a href="#" class="header-right__link">Help</a></li>
+                     <li class="header-right__item"><a href="#" class="header-right__link">Contacts</a></li>
+                     <li class="header-right__item "><a href="#" class="header-right__link header-right__link--apple">Get App</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="header-logo">
+               <img class="header-logo__img" src="/assets/img/header/logo.svg" alt="newprovidence" >
+            </div>
+         </div>
+      </div>
+   </header>
+   <main class="main">
+      <section class="hero">
+         <h1 class="hero__title title">What happens tomorrow?</h1>
+         <p class="hero__subscr subscr">The sight of the tumblers restored Bob Sawyer to a degree of equanimity which he had not possessed since his interview with his landlady. His face brightened up, and he began to feel quite convivial.</p>
+         <button class="hero__btn btn btn-reset" data-aos="fade-up"> <span>Watch Video</span> </button>
+         <!-- <img class="hero__img" src="/assets/img/hero/iphone-6.png" alt="iPhone 6 image" > -->
+      </section>
+   </main>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script src="/js/script.js"></script>
+
+   <script>AOS.init();</script>
    
 </body>
 </html>

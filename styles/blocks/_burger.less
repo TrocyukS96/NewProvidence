@@ -1,0 +1,78 @@
+// main: ./../main.less
+
+
+
+
+.burger {
+   display: block;
+   position: absolute;
+   width: 30px;
+   height: 20px;
+   z-index: 5;
+   transition: all 0.3s ease 0s;
+   cursor: pointer;
+   top: 60px;
+   left: 0px;
+   z-index: 200;
+
+
+   &::before,
+   &::after {
+      content: " ";
+      width: 100%;
+      height: 2px;
+      background-color: #1b1c1e;
+      position: absolute;
+      left: 0;
+      transition: all 0.3s ease 0s;
+   }
+
+   &::before {
+      top: 0;
+   }
+
+   &::after {
+      bottom: 0;
+   }
+
+   &.active .burger__span {
+      transform: scale(0);
+      -webkit-transform: scale(0);
+      -moz-transform: scale(0);
+      -ms-transform: scale(0);
+      -o-transform: scale(0);
+   }
+
+   &.active::before {
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      top: 9px;
+   }
+
+   &.active::after {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      bottom: 9px;
+   }
+
+
+   &__span {
+      position: absolute;
+      left: 0;
+      top: 9px;
+      width: 100%;
+      height: 2px;
+      background-color: #1b1c1e;
+      transition: all 0.3s ease 0s;
+      -webkit-transition: all 0.3s ease 0s;
+      -moz-transition: all 0.3s ease 0s;
+      -ms-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+   }
+}
