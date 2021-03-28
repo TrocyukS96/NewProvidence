@@ -1,0 +1,88 @@
+// main: ./../main.less
+.benefits {
+   max-width: 1100px;
+   margin: 0 auto;
+   padding: 0 15px;
+
+
+   &__items {
+      display: flex;
+      justify-content: space-between;
+      padding: 218px 0 167px 0;
+      position: relative;
+
+      &::after {
+         content: ' ';
+         width: 1145px;
+         height: 2px;
+         border-radius: 0.5px;
+         background-color: #26272d;
+         position: absolute;
+         bottom: 40px;
+         left: -37px;
+      }
+   }
+
+   &__item {
+
+      &:first-child {
+         max-width: 482px;
+         // padding: 0 15px 0 0;
+
+      }
+
+      &:last-child {
+         max-width: 496px;
+
+      }
+   }
+
+   &__title {
+      margin: 0 0 48px 0;
+      font-size: 26px;
+      font-weight: 300;
+      line-height: 1.31;
+      text-align: left;
+      color: #26272d;
+   }
+
+   &__title--left {
+      position: relative;
+
+      &::before {
+         content: " ";
+         width: 42px;
+         height: 54px;
+         background-color: @btnColor;
+         position: absolute;
+         bottom: 65px;
+         left: 0;
+      }
+   }
+
+   &__title--right {
+      position: relative;
+
+      &::before {
+         content: " ";
+         width: 42px;
+         height: 54px;
+         background-color: @btnColor;
+         position: absolute;
+         bottom: 65px;
+         left: 0;
+      }
+   }
+
+   &__subscr {
+      font-size: 18px;
+      line-height: 1.44;
+      text-align: left;
+      margin: 0 0 40px 0;
+
+      &:last-child {
+         margin: 0;
+      }
+   }
+
+}

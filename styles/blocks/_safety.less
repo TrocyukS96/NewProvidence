@@ -1,0 +1,109 @@
+// main: ./../main.less
+.safety {
+   max-width: 1600px;
+   margin: 0 auto;
+   overflow: hidden;
+
+   &__items {
+      display: flex;
+      margin-top: 87px;
+      margin-bottom: 150px;
+      position: relative;
+   }
+
+   &__item {
+      &:first-child {
+         width: 815px;
+         height: 613px;
+
+      }
+
+      &:last-child {
+         max-width: 460px;
+         margin-left: 102px;
+         padding: 0 10px 0 0;
+      }
+   }
+
+   &__img {
+      position: absolute;
+      left: -100px;
+      top: -24px;
+   }
+
+   &__title {
+      margin: 137px 0 73px 0;
+      font-size: 42px;
+      line-height: 1.24;
+      text-align: left;
+   }
+
+   &__subscr {
+      font-size: 20px;
+      line-height: 1.4;
+      text-align: left;
+      margin: 0 0 40px 0;
+
+
+   }
+
+   &__subscr:last-child {
+      margin: 0 0 0 0;
+   }
+
+   &__btn {
+      margin-top: 25px;
+      display: inline-block;
+
+      &:hover {
+         transition: all 0.3s;
+         transform: scale(1.2);
+         opacity: 0.4;
+
+      }
+   }
+
+   &__btn--hack {
+      width: 202px;
+      height: 42px;
+      line-height: 42px;
+      border-radius: 21px;
+      background-color: @btnColor;
+      ////////////////////////////
+      margin: 0 49px 0 0;
+      font-size: 16px;
+      color: #ffffff;
+      padding: 0 0 0 26px;
+      position: relative;
+
+
+
+      &::after {
+         content: ' ';
+         width: 14px;
+         height: 12px;
+         margin: 2px 0 1px 49px;
+         border-radius: 1.5px;
+         background-color: #ffffff;
+         background: url('/assets/img/icons/arrow-icon.png') no-repeat;
+         position: absolute;
+         top: 14px;
+         right: 14px;
+      }
+   }
+
+   &__btn--learn {
+      width: 142px;
+      border-radius: 21px;
+      border: solid 1px @titleColor;
+      background-color: #ffffff;
+      /////////////////////////////
+      text-align: center;
+   }
+
+   &__btn--learn span {
+      color: @titleColor;
+      font-size: 16px;
+      line-height: 42px;
+   }
+}
