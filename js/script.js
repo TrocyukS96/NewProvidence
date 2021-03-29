@@ -3,4 +3,6 @@ $(document).ready(function() {
       $('.burger, .header-novigation, .btn').toggleClass('active');
       $('body').toggleClass('lock');
    });
+   AOS.init();
+   
 });

@@ -1,0 +1,59 @@
+// main: ./../main.less
+.distribution {
+   max-width: 1570px;
+   margin: 150px auto 0 auto;
+
+   &__body {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 15px;
+   }
+
+   &__text {
+      max-width: 469px;
+   }
+
+   &__title {
+      font-size: 42px;
+      padding: 0 0 64px 0;
+      line-height: 1.24;
+      text-align: left;
+   }
+
+   &__subscr {
+      font-size: 20px;
+      line-height: 1.4;
+      text-align: left;
+      padding: 0 0 40px 0;
+
+   }
+
+   &__partners {
+      padding: 28px 0 0 0;
+      font-size: 12px;
+      font-weight: bold;
+      line-height: 1.83;
+      letter-spacing: 1.2px;
+      text-align: left;
+      color: @titleColor;
+      position: relative;
+
+      &::after {
+         content: " ";
+         width: 125px;
+         height: 34px;
+         background: url('/assets/img/distribution/dropbox-logo.png') no-repeat;
+         display: block;
+         margin-top: 20px;
+
+
+      }
+   }
+
+   &__map {
+      max-width: 822px;
+      padding-left: 20px;
+   }
+
+   &__img {}
+}
