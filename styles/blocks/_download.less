@@ -1,0 +1,80 @@
+// main: ./../main.less
+.download {
+   text-align: center;
+   background-color: #f5f5f8;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 0 15px;
+
+   &__logo {
+      padding-top: 75px;
+      opacity: 0.5;
+      font-size: 12px;
+      line-height: 1.83;
+      letter-spacing: 1.2px;
+      color: rgba(58, 61, 75, 0.5);
+   }
+
+   &__title {
+      padding-top: 37px;
+      font-size: 42px;
+      line-height: 1.24;
+      color: #3a3d4b;
+   }
+
+   &__form {
+      padding-top: 47px;
+   }
+
+   &__btn {
+      display: inline-block;
+      margin-top: 98px;
+      margin-bottom: 131px;
+      // for btn
+      width: 210px;
+      // height: 60px;
+      border-radius: 30px;
+      padding: 13px 0 11px 0;
+      background-color: #131315;
+      // for txt
+      font-size: 11.5px;
+      color: #ffffff;
+      position: relative;
+
+      &:hover {
+         background-color: #d4d5d9;
+      }
+
+      &::before {
+         content: " ";
+         width: 24px;
+         height: 28px;
+         background-color: #ffffff;
+         background: url('/assets/img/icons/apple-icon.svg') no-repeat;
+         position: absolute;
+         top: 14px;
+         left: 27px;
+      }
+
+
+   }
+
+   &__span {
+      display: block;
+      font-size: 23.5px;
+      position: relative;
+
+      &::after {
+         content: "or Download From";
+         opacity: 0.5;
+         font-size: 12px;
+         letter-spacing: 1.2px;
+         color: rgba(58, 61, 75, 0.3);
+         position: absolute;
+         top: -62px;
+         left: 50px;
+      }
+
+   }
+}
