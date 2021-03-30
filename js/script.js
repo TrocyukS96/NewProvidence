@@ -4,5 +4,22 @@ $(document).ready(function() {
       $('body').toggleClass('lock');
    });
    AOS.init();
-   
+   $('.slider').slick({
+		arrows:false,
+		dots:false,
+		slidesToShow:3,
+      slidesToScroll:1,
+		speed:300,
+      InitialSlide:3,
+      TouchTreshhold:5,
+      easing: 'ease-in',
+      responsive:[
+         {
+            breakpoint:600,
+            settings:{
+               slidesToShow:1
+            }
+         }
+      ]
+	});
 });

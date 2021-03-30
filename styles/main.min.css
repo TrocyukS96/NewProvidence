@@ -1,3 +1,19 @@
+img {
+  max-width: 100%;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
 @font-face {
   font-family: 'Lato';
   font-style: normal;
@@ -26,23 +42,6 @@
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/varelaround/v13/w8gdH283Tvk__Lua32TysjIvoA.ttf) format('truetype');
 }
-img {
-  max-width: 100%;
-}
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-.list-reset {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-body {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  background-color: #ededee;
-}
 .btn {
   font-size: 16px;
   transition: 0.3s;
@@ -57,6 +56,28 @@ body {
 .title {
   font-family: 'Varela Round', sans-serif;
   color: #26272d;
+}
+.slider {
+  /* Слайдер */
+  /* Ограничивающая оболочка */
+  /* Лента слайдов */
+}
+.slider .slick-slider {
+  min-width: 0;
+}
+.slider .slick-list {
+  overflow: hidden;
+}
+.slider .slick-track {
+  display: flex;
+  align-items: flex-start;
+}
+.slider .slider__item {
+  padding: 0px 15px;
+  border: 2px solid red;
+}
+.slider .slider__img {
+  border: 2px solid red;
 }
 .header {
   position: absolute;
@@ -465,6 +486,61 @@ body {
   max-width: 822px;
   padding-left: 20px;
 }
+.interface {
+  max-width: 1600px;
+  height: 1200px;
+  margin: 0 auto;
+  border: 2px solid red;
+}
+.interface__conteiner {
+  max-width: 1020px;
+  margin: 0 auto;
+  position: relative;
+  padding: 146px 15px 126px 15px;
+  z-index: 10;
+}
+.interface__title {
+  font-size: 42px;
+  line-height: 1.24;
+  margin-bottom: 92px;
+  text-align: center;
+  position: relative;
+}
+.interface__title::after {
+  content: " ";
+  width: 50px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #267df4;
+  position: absolute;
+  top: 80px;
+  left: 47%;
+}
+.interface__subscr {
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: 1.2px;
+}
+.interface-slider {
+  margin-top: 134px;
+  border: 2px solid red;
+  position: relative;
+  z-index: 10;
+}
+.interface-slider::after {
+  content: " ";
+  width: 555px;
+  height: 840px;
+  border-radius: 56px;
+  background: url(/assets/img/interface/screen/iphone-6.png) no-repeat;
+  position: absolute;
+  z-index: -1;
+  top: -92px;
+  left: 54%;
+  transform: translateX(-50%);
+  border: 2px solid red;
+}
 @media (max-width: 1350px) {
   .safety__img {
     width: 830px;
@@ -640,7 +716,7 @@ body {
     flex-direction: column;
     justify-content: start;
     margin: 0 0 0 0;
-    background-color: #0bdfdf;
+    background-color: #d4d5d9;
     transition: all 0.3s ease 0s;
     overflow: auto;
     z-index: 100;
