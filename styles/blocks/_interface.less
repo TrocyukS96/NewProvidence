@@ -3,7 +3,8 @@
    max-width: 1600px;
    height: 1200px;
    margin: 0 auto;
-   border: 2px solid red;
+   background-color: #f5f5f8;
+   text-align: center;
 
    &__conteiner {
       max-width: 1020px;
@@ -18,7 +19,7 @@
       font-size: 42px;
       line-height: 1.24;
       margin-bottom: 92px;
-      text-align: center;
+      display: inline-block;
       position: relative;
 
 
@@ -30,7 +31,7 @@
          background-color: #267df4;
          position: absolute;
          top: 80px;
-         left: 47%;
+         left: 44%;
       }
    }
 
@@ -44,24 +45,10 @@
    &-slider {
       margin-top: 134px;
       // max-width: 1600px;
-      border: 2px solid red;
       // margin: 0 auto;
       position: relative;
       z-index: 10;
 
-      &::after {
-         content: " ";
-         width: 555px;
-         height: 840px;
-         border-radius: 56px;
-         background: url(/assets/img/interface/screen/iphone-6.png) no-repeat;
-         position: absolute;
-         z-index: -1;
-         top: -92px;
-         left: 54%;
-         transform: translateX(-50%);
-         border: 2px solid red;
-      }
    }
 
 }

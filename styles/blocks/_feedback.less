@@ -1,0 +1,104 @@
+// main: ./../main.less
+.feedback {
+   max-width: 1080px;
+   padding: 0 10px;
+   margin: 0 auto;
+
+   &__conteiner {}
+
+   &__slider {
+      max-width: 554px;
+      margin: 132px auto 128px auto;
+      position: relative;
+   }
+
+   .slider__item {
+      max-width: 554px;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .slider__img {
+      // width: 130px;
+      // height: 130px;
+      box-shadow: 13.7px 37.6px 40px 0 rgba(92, 95, 101, 0.28);
+      background-color: #26292c;
+      border-radius: 50%;
+      overflow: hidden;
+   }
+
+   .slick-list {
+      overflow: hidden;
+      margin: 0 0 0 0;
+   }
+
+   .slider__title {
+      margin-top: 75px;
+      font-size: 32px;
+      font-weight: 300;
+      line-height: 1.19;
+   }
+
+   .slider__subscr {
+      margin-top: 48px;
+      font-size: 20px;
+      line-height: 1.4;
+   }
+
+   .slider__stars {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+   }
+
+   .slider__star {
+      padding-right: 8px;
+   }
+
+   .slider__star-img {}
+
+   .slider .slick-arrow {
+      position: absolute;
+      top: 10%;
+      margin: -30px 0px 0px 0px;
+      z-index: 10;
+      font-size: 0;
+      width: 30px;
+      height: 60px;
+      outline: none;
+
+   }
+
+   .slider .slick-arrow.slick-prev {
+      left: -30%;
+      background: url('/assets/img/feedback/arrows/arrow-left.png') 0 0 / 100% no-repeat;
+
+      &:active {
+         background-color: rgb(211, 210, 210);
+         outline: none;
+      }
+   }
+
+   .slider .slick-arrow.slick-next {
+      right: -30%;
+      background: url('/assets/img/feedback/arrows/arrow-right.png') 0 0 / 100% no-repeat;
+      outline: none;
+
+      &:active {
+         background-color: rgb(211, 210, 210);
+         outline: none;
+      }
+   }
+
+
+   .slider__username {
+      margin-top: 68px;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 1.83;
+      letter-spacing: 1.2px;
+      color: @titleColor;
+   }
+}

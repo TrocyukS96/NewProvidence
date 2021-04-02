@@ -1,0 +1,175 @@
+// main: ./../main.less
+
+
+.choice {
+   background-color: #f5f5f8;
+   padding-bottom: 211px;
+
+   &__body {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__plan {
+      max-width: 351px;
+      margin-top: 179px;
+   }
+
+   &__plan-title {
+      font-size: 42px;
+      line-height: 1.24;
+      text-align: left;
+      padding: 35px 0 90px 0;
+   }
+
+   &__plan-buttons {
+      width: 258px;
+      height: 50px;
+      padding: 4px;
+      border-radius: 25px;
+      border: solid 1px #26292c;
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__plan-btn {
+      width: 124px;
+      height: 42px;
+      border-radius: 21px;
+      background-color: #f5f5f8;
+      border: solid 1px #f5f5f8;
+      transition: all 0.3s;
+
+      &:hover {
+         border: solid 1px #26292c;
+         box-shadow: 1.7px 4.7px 20px 0 rgba(61, 61, 62, 0.15), 10.3px 28.2px 50px 0 rgba(92, 95, 101, 0.28);
+         background-color: #fff;
+         color: black;
+      }
+   }
+
+   // &__plan-btn--left {}
+
+   &__plan-btn--right {
+      margin-left: 32px;
+   }
+
+   &__plan-subscr {
+      font-size: 20px;
+      line-height: 1.4;
+      text-align: left;
+      margin-top: 77px;
+      color: @subscrColor;
+
+
+   }
+
+   & p:last-child {
+      margin-top: 44px;
+   }
+
+   &__plan-link {
+      color: @btnColor;
+   }
+
+   &__cards {
+      display: flex;
+      margin-top: 179px;
+   }
+
+   &__card {
+      width: 340px;
+      height: 510px;
+      background-color: #ebebed;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: all 0.3s;
+      text-align: center;
+
+      &:hover {
+         transform: scale(1.1);
+         background-color: #fff;
+         border-radius: 10px;
+
+         // .choice__card-price {
+         //    background-color: #fff;
+         // }
+
+         .choice-card button {
+            background-color: @btnColor;
+         }
+      }
+   }
+
+   &__card-name {
+      font-size: 32px;
+      font-weight: 300;
+      line-height: 1.19;
+      color: @titleColor;
+   }
+
+   &__card-price {
+      width: 63px;
+      height: 28px;
+      line-height: 28px;
+      margin: 29px 0 0 0;
+      border-radius: 14px;
+      border: solid 1px #6b7279;
+      background-color: #ebebed;
+      // for txt
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.1px;
+      text-align: center;
+      color: @titleColor;
+   }
+
+   &__card-subscr {
+      margin-top: 56px;
+      font-size: 20px;
+      line-height: 1.4;
+      color: @subscrColor;
+   }
+
+   &__card-list {
+      margin-top: 47px;
+      text-align: center;
+   }
+
+   &__card-item {
+      display: inline-flex;
+      padding-bottom: 27px;
+      font-size: 16px;
+      line-height: 1.5;
+      color: @titleColor;
+      position: relative;
+      border: 2px solid transparent;
+
+      &::before {
+         content: " ";
+         width: 14px;
+         height: 10px;
+         background: url("/assets/img/icons/on-icon.png");
+         position: absolute;
+         top: 8px;
+         left: -20px;
+      }
+   }
+
+   &__card-btn {
+      margin-top: 107px;
+      width: 202px;
+      height: 42px;
+      line-height: 42px;
+      border-radius: 21px;
+      border: solid 1px #267df4;
+      background-color: #ebebed;
+
+
+   }
+
+   &__card-btn--pro:last-child {
+      margin-top: 51px;
+   }
+}
