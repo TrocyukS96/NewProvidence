@@ -14,6 +14,9 @@ body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
 }
+.wrapper {
+  position: relative;
+}
 @font-face {
   font-family: 'Lato';
   font-style: normal;
@@ -114,11 +117,7 @@ body {
   padding: 0px 15px;
 }
 .header {
-  position: absolute;
-  top: 0;
-  left: 50%;
   width: 100%;
-  transform: translateX(-50%);
 }
 .header-body {
   padding: 44px 0;
@@ -189,7 +188,7 @@ body {
   width: 17px;
   height: 21px;
   background-color: #ffffff;
-  background: url('assets/img/icons/apple-icon.svg');
+  background: url('/assets/img/icons/apple-icon.svg');
   background-repeat: no-repeat;
   position: absolute;
   top: 11px;
@@ -209,12 +208,12 @@ body {
 .burger {
   display: block;
   position: absolute;
+  top: 54px;
+  left: 0px;
   width: 30px;
   height: 20px;
   transition: all 0.3s ease 0s;
   cursor: pointer;
-  top: 58px;
-  left: 0px;
   z-index: 200;
 }
 .burger::before,
@@ -274,7 +273,7 @@ body {
 }
 .hero {
   text-align: center;
-  background-image: url('assets/img/hero/bg.png');
+  background-image: url('/assets/img/hero/bg.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -315,7 +314,7 @@ body {
   width: 10px;
   height: 11px;
   background-color: currentColor;
-  background: url('assets/img/icons/play-icon.svg');
+  background: url('/assets/img/icons/play-icon.svg');
   position: absolute;
   top: 20px;
   left: 42px;
@@ -511,7 +510,7 @@ body {
   content: " ";
   width: 125px;
   height: 34px;
-  background: url('assets/img/distribution/dropbox-logo.png') no-repeat;
+  background: url('/assets/img/distribution/dropbox-logo.png') no-repeat;
   display: block;
   margin-top: 20px;
 }
@@ -590,7 +589,7 @@ body {
   margin: 1px 0 0 18px;
   border-radius: 1.5px;
   background-color: #ffffff;
-  background: url(assets/img/icons/arrow-icon.png);
+  background: url(/assets/img/icons/arrow-icon.png);
   position: absolute;
   right: 23px;
   top: 15px;
@@ -692,7 +691,7 @@ body {
 }
 .feedback .slider .slick-arrow.slick-prev {
   left: -30%;
-  background: url('assets/img/feedback/arrows/arrow-left.png') 0 0 / 100% no-repeat;
+  background: url('/assets/img/feedback/arrows/arrow-left.png') 0 0 / 100% no-repeat;
 }
 .feedback .slider .slick-arrow.slick-prev:active {
   background-color: #d3d2d2;
@@ -700,7 +699,7 @@ body {
 }
 .feedback .slider .slick-arrow.slick-next {
   right: -30%;
-  background: url('assets/img/feedback/arrows/arrow-right.png') 0 0 / 100% no-repeat;
+  background: url('/assets/img/feedback/arrows/arrow-right.png') 0 0 / 100% no-repeat;
   outline: none;
 }
 .feedback .slider .slick-arrow.slick-next:active {
@@ -924,7 +923,7 @@ body {
   width: 24px;
   height: 28px;
   background-color: #ffffff;
-  background: url('assets/img/icons/apple-icon.svg') no-repeat;
+  background: url('/assets/img/icons/apple-icon.svg') no-repeat;
   position: absolute;
   top: 18px;
   left: 18px;
@@ -1003,7 +1002,7 @@ body {
   width: 108px;
   height: 36px;
   background-color: #26272d;
-  background: url('assets/img/footer/craft-work.png') no-repeat;
+  background: url('/assets/img/footer/craft-work.png') no-repeat;
   margin-left: 11px;
   position: absolute;
   top: -9px;
@@ -1119,6 +1118,9 @@ body {
   }
 }
 @media (max-width: 1080px) {
+  body.lock {
+    overflow: hidden;
+  }
   .header-novigation {
     position: fixed;
     top: 0;
