@@ -1,0 +1,171 @@
+// main: ./../main.less
+.footer {
+   padding: 90px 0 36px 0;
+
+   &-top {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 131px;
+      position: relative;
+
+      &::after {
+         content: " ";
+         width: 1120px;
+         height: 1px;
+         opacity: .2;
+         border-radius: 0.5px;
+         background-color: #26292c;
+         position: absolute;
+         bottom: 0;
+         left: 0;
+      }
+   }
+
+   &-top__left {
+      max-width: 245px;
+   }
+
+   &-top__logo {
+      padding-bottom: 34px;
+   }
+
+
+
+   &-top__subscr {
+      padding-bottom: 32px;
+      font-size: 14px;
+      line-height: 1.71;
+      text-align: left;
+      color: @subscrColor;
+
+   }
+
+   .btn--black {
+      padding: 11px 0 11px 55px;
+      border-radius: 16px;
+      margin-bottom: 40px;
+
+      &::before {
+         content: " ";
+         width: 24px;
+         height: 28px;
+         background-color: #ffffff;
+         background: url('/assets/img/icons/apple-icon.svg') no-repeat;
+         position: absolute;
+         top: 18px;
+         left: 18px;
+      }
+   }
+
+   .btn__span {
+      &::after {
+         display: none;
+      }
+   }
+
+   &__social {}
+
+   &__social-list {
+      display: flex;
+   }
+
+   &__social-item {
+      padding-right: 26px;
+      transition: all .3s;
+
+      &:hover {
+         color: rgba(27, 28, 30, 0.4);
+         opacity: 0.4;
+         transform: scale(1.2);
+
+      }
+
+      &:last-child {
+         padding: 0;
+      }
+   }
+
+   &__social-link {}
+
+   &__social-img {}
+
+   &-top__right {
+      display: flex;
+
+   }
+
+   &-top__column {
+      &:nth-child(1) {
+         padding-right: 93px;
+      }
+
+      &:nth-child(2) {
+         padding-right: 65px;
+      }
+
+      &:nth-child(3) {
+         padding-right: 40px;
+      }
+   }
+
+   &-top__title {
+      padding-bottom: 26px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-align: left;
+      color: @titleColor;
+      text-transform: uppercase;
+   }
+
+   &-top__list {}
+
+   &-top__item {
+      padding-bottom: 12px;
+
+      &:last-child {
+         padding: 0;
+      }
+   }
+
+   &-top__link {
+      font-size: 16px;
+      line-height: 2.25;
+      text-align: left;
+      color: @subscrColor;
+   }
+
+   &-bottom {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 39px;
+   }
+
+   &-bottom__subscr {
+      font-size: 14px;
+      line-height: 1.71;
+      color: @subscrColor;
+   }
+
+   &-bottom__link {
+      color: #3b55e6;
+      border-bottom: 1px solid currentColor;
+
+   }
+
+   &-bottom__subscr--right {
+      padding-right: 119px;
+      position: relative;
+
+      &::after {
+         content: '';
+         width: 108px;
+         height: 36px;
+         background-color: #26272d;
+         background: url('/assets/img/footer/craft-work.png') no-repeat;
+         margin-left: 11px;
+         position: absolute;
+         top: -9px;
+      }
+   }
+}
