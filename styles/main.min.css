@@ -209,7 +209,7 @@ body {
   padding: 0 15px;
 }
 .burger {
-  display: block;
+  display: none;
   position: absolute;
   top: 54px;
   left: 0px;
@@ -276,7 +276,7 @@ body {
 }
 .hero {
   text-align: center;
-  background-image: url('../../assets/img/hero/bg.png');
+  background-image: url('assets/img/hero/bg.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -317,7 +317,7 @@ body {
   width: 10px;
   height: 11px;
   background-color: currentColor;
-  background: url('/assets/img/hero/bg.png');
+  background: url('assets/img/hero/bg.png');
   position: absolute;
   top: 20px;
   left: 42px;
@@ -1142,6 +1142,7 @@ body {
     left: 0;
   }
   .burger {
+    display: block;
     position: fixed;
     top: 30px;
     left: 10px;
