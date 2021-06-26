@@ -24,7 +24,19 @@ body {
    font-family: 'Lato', sans-serif;
    font-weight: 400;
    // background-color: #ededee;
+   overflow: hidden;
 
+}
+
+a {
+   color: @titleColor;
+
+   &:hover {
+      color: @btnColor;
+      opacity: 0.4;
+      transform: scale(1.2);
+
+   }
 }
 
 .wrapper {
@@ -42,6 +54,7 @@ body {
 @import './blocks/_burger.less';
 @import './blocks/_main.less';
 @import './blocks/_hero.less';
+@import './blocks/_modal.less';
 @import './blocks/_benefits.less';
 @import './blocks/_safety.less';
 @import './blocks/_distribution.less';

@@ -5,7 +5,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
    <link rel="stylesheet" href="css/normalize.css">
    <link rel="stylesheet" href="styles/main.min.css">
    <title>NewProvidence</title>
@@ -48,8 +48,21 @@
                had not possessed since his interview with his landlady. His face brightened up, and he began to feel
                quite
                convivial.</p>
-            <button class="hero__btn btn btn-reset" data-aos="fade-up"> <span>Watch Video</span> </button>
-            <!-- <img class="hero__img" src="/assets/img/hero/iphone-6.png" alt="iPhone 6 image" > -->
+            <a href="#openModal"  class="hero__btn btn btn-reset" data-aos="fade-up" > <span>Watch Video</span> </a>
+            <div id="openModal" class="modal">
+               <div class="modal-dialog">
+                 <div class="modal-content">
+                   <div class="modal-header">
+                     <h3 class="modal-title">Название ролика</h3>
+                     <a href="#close" title="Close" class="close">×</a>
+                   </div>
+                   <div class="modal-body">    
+                     <p>Дополнительное название</p>
+                     <iframe width="300" height="300" src="https://www.youtube.com/embed/bmVKaAV_7-A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                   </div>
+                 </div>
+               </div>
+             </div>
          </section>
          <section class="benefits" id="benefits">
             <div class="benefits__items">
@@ -84,8 +97,8 @@
                   <p class="safety__subscr subscr">We thought - Mr. Copperfield thought - it was quite a large rookery;
                      but
                      the nests were very old ones, and the birds have deserted them a long while.</p>
-                  <a class="safety__btn safety__btn--hack btn btn-reset" src="#">Try to hack us</a>
-                  <a class="safety__btn safety__btn--learn btn btn-reset" src="#"><span>Learn more</span> </a>
+                  <a class="safety__btn safety__btn--hack btn btn-reset" data-aos="fade-up" src="#">Try to hack us</a>
+                  <a class="safety__btn safety__btn--learn btn btn-reset" data-aos="fade-up"  src="#"><span>Learn more</span> </a>
                </div>
             </div>
          </section>

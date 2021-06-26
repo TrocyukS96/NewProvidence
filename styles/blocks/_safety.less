@@ -55,12 +55,7 @@
       margin-top: 25px;
       display: inline-block;
 
-      &:hover {
-         transition: all 0.3s;
-         transform: scale(1.2);
-         opacity: 0.4;
 
-      }
    }
 
    &__btn--hack {
@@ -75,6 +70,16 @@
       color: #ffffff;
       padding: 0 0 0 26px;
       position: relative;
+
+      &:hover {
+         transition: all 0.3s;
+         transform: scale(1.2);
+
+
+         color: #fff;
+         background-color: #000;
+
+      }
 
 
 
@@ -101,11 +106,26 @@
       background-color: #ffffff;
       /////////////////////////////
       text-align: center;
+
+      &:hover {
+         transition: all 0.3s;
+         transform: scale(1.2);
+
+
+         color: #fff;
+         background-color: #000;
+
+      }
    }
 
    &__btn--learn span {
       color: @titleColor;
       font-size: 16px;
       line-height: 42px;
+
+      &:hover {
+         color: #fff;
+
+      }
    }
 }
